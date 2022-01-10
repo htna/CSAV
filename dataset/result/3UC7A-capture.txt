@@ -1,4 +1,4 @@
-// command: csav.exe -i xyzr\3UC7A.xyzr -x pair\3UC7A.pair -o result\3UC7A-capture.txt 
+// command: csav.exe -i xyzr\3UC7A.xyzr -x pair_lstatoms\3UC7A.pair -o result_lstatoms\3UC7A-capture.txt 
 // solvent gap: 3.5, delta: 0.1, stop at event of solvent exit: no
 // total CSAV: 437955.258160855
 

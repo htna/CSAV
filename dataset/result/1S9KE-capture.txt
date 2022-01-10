@@ -1,4 +1,4 @@
-// command: csav.exe -i xyzr\1S9KE.xyzr -x pair\1S9KE.pair -o result\1S9KE-capture.txt 
+// command: csav.exe -i xyzr\1S9KE.xyzr -x pair_lstatoms\1S9KE.pair -o result_lstatoms\1S9KE-capture.txt 
 // solvent gap: 3.5, delta: 0.1, stop at event of solvent exit: no
 // total CSAV: 1398608.76696875
 
