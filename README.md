@@ -26,7 +26,7 @@ Input:
                                 Format (txt)
                                 line 1:    <index of atom, i_1>, <index of atom, j_1>; <list of involved atoms' ids>
                                   ...
-                                line  :    <index of atom, i_m>, <index of atom, j_m>; <list of involved atoms' ids>
+                                line m:    <index of atom, i_m>, <index of atom, j_m>; <list of involved atoms' ids>
   -p, --param txt           Contains parameter information
                                 Format (txt)
                                 line 1:    <gap between atom and solvent surface in Angstrom, (default=3.5Å)>
