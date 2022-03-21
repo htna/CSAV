@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>8.0</LangVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{96448B39-0B3D-4119-BA6E-7135C94C71FF}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>csav</RootNamespace>
+    <AssemblyName>csav</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86_Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86_Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\AnyCPU_Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputPath>bin\AnyCPU_Release\</OutputPath>
+    <Prefer32Bit>false</Prefer32Bit>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>CSAV.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CSAV\Debug.cs" />
+    <Compile Include="CSAV\CommSolvAccVol.cs" />
+    <Compile Include="CSAV\Debug_DrawValidate.cs" />
+    <Compile Include="CSAV\Debug_IListener.cs" />
+    <Compile Include="CSAV\Debug_Listener.cs" />
+    <Compile Include="CSAV\ElementType.cs" />
+    <Compile Include="CSAV\Geometry.cs" />
+    <Compile Include="CSAV\IProtStruct.cs" />
+    <Compile Include="CSAV\Point2.cs" />
+    <Compile Include="CSAV\CrossSectArea.cs" />
+    <Compile Include="CSAV\Circle.cs" />
+    <Compile Include="CSAV\CircleSegment.cs" />
+    <Compile Include="CSAV\EventPoint2D.cs" />
+    <Compile Include="CSAV\EventQueue.cs" />
+    <Compile Include="CSAV\CircleSegmentComparer.cs" />
+    <Compile Include="CSAV\CrossSectArea_CalcCrossSectAreaOfCSAV.cs" />
+    <Compile Include="CSAV\CrossSectArea_HandleEventCircleStartEndIntersect.cs" />
+    <Compile Include="CSAV\CrossSectArea_SolvPatches_AddRemoveUpdate.cs" />
+    <Compile Include="CSAV\CrossSectArea_ValidateSolvAreaPatch.cs" />
+    <Compile Include="CSAV\CommSolvAccVol_CalcCSAV.cs" />
+    <Compile Include="CSAV\CommSolvAccVol_FuncCircle.cs" />
+    <Compile Include="CSAV\CommSolvAccVol_TopDown.cs" />
+    <Compile Include="ProtStruct.cs" />
+    <Compile Include="HTLib2\BTree_AvlTree.cs" />
+    <Compile Include="HTLib2\BTree_BST.cs" />
+    <Compile Include="HTLib2\BTree_Node.cs" />
+    <Compile Include="HTLib2\BTree_Rotate.cs" />
+    <Compile Include="HTLib2\HDataStruc.cs" />
+    <Compile Include="HTLib2\HDebug.cs" />
+    <Compile Include="HTLib2\HPriorityQueue.cs" />
+    <Compile Include="HTLib2\HSerialize.cs" />
+    <Compile Include="HTLib2\HSystem_IO.HRead.cs" />
+    <Compile Include="HTLib2\HSystem_IO.HWrite.cs" />
+    <Compile Include="HTLib2\IBinarySerializable.cs" />
+    <Compile Include="HTLib2\LinAlg.CrossProd.cs" />
+    <Compile Include="HTLib2\LinkedAvlTree.cs" />
+    <Compile Include="HTLib2\LinkedListT.Node.cs" />
+    <Compile Include="HTLib2\Mathematica.ToString2.cs" />
+    <Compile Include="HTLib2\Vector.cs" />
+    <Compile Include="Main_HelperFunctions.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="CSAV\LICENSE" />
+    <None Include="HTLib2\LICENSE" />
+    <None Include="LICENSE" />
+    <None Include="Sample\3UC7A.bat" />
+    <None Include="Sample\3UC7A.pair" />
+    <None Include="Sample\3UC7A.xyzr" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Sample\3UC7A-capture.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
